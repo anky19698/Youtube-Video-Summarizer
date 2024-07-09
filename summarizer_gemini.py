@@ -50,14 +50,14 @@ if video_url:
 
                 if transcript_text:
                     st.subheader("Transcript Text")
-                    st.text(transcript_text[:300] + "...")  # Display first 1000 characters
+                    st.text(transcript_text[:500] + "...")  # Display first 500 characters
                     # word Count
                     word_count = count_words(transcript_text)
                     st.text(f"Total Words: {word_count}")
 
-                    if word_count > 20000:
+                    if word_count > 100000:
                         st.warning(f"Word Count {word_count} is Huge, We Will Only Use First 20000 Words for Summarization")
-                        transcript_text = transcript_text[:20000]
+                        transcript_text = transcript_text[:100000]
 
                     prompt = f"""
                     You are a Summarizer, Dont Generate any Title Text,
