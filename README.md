@@ -1,2 +1,2 @@
-# Youtube-Video-Summarizerr
+# Youtube-Video-Summarizer
 Summarizes Youtube Video from its Transcript. 
