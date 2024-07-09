@@ -36,6 +36,14 @@ def count_words(text):
     words = text.split()
     return len(words)
 
+
+# Function to encode image to base64
+def get_base64_of_bin_file(bin_file):
+    with open(bin_file, 'rb') as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+
 # Custom CSS for background image
 page_bg_img = f"""
 <style>
