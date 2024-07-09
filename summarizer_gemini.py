@@ -5,7 +5,7 @@ import google.generativeai as genai
 
 
 # Set up gemini pro key
-gemini_pro_key = "AIzaSyARyxC9y0RQwWOQuGlbNoJHYE6a8ixOIW0"
+gemini_pro_key = st.secrets['key']
 genai.configure(api_key=gemini_pro_key)
 model = genai.GenerativeModel('gemini-1.5-flash')
 
